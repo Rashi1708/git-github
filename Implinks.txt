@@ -1,0 +1,1 @@
+https://marclamberti.com/blog/airflow-trigger-rules-all-you-need-to-know/
