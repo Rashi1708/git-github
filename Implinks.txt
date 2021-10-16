@@ -1,1 +1,3 @@
 https://marclamberti.com/blog/airflow-trigger-rules-all-you-need-to-know/
+
+BQ exaple DAg: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/HEAD/composer/workflows/bq_notify.py
