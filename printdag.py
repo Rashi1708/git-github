@@ -39,14 +39,13 @@ with DAG(
     schedule_interval=timedelta(days=1),
     start_date=datetime(2021, 1, 1),
     catchup=False,
-    tags=['print dag'],
+    tags=['print dag']
 ) as dag:
 
   def print_nos():
     i=1
     for i in range(10):
 	    print(i)
-    return "success"
 
   t1= python_operator.PythonOperator(
 		task_id="printnumbers",
@@ -54,11 +53,9 @@ with DAG(
 
   def print_words():
     print("henna")
-    return "alldone"
 
   t2= python_operator.PythonOperator(
 		task_id="printwords",
-		python_callable=print_words,
-		trigger_rule=TriggerRule.ONE_SUCCESS)
+		python_callable=print_words)
 
   t1 >> t2
