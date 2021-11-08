@@ -1,3 +1,6 @@
+#while running parameter like project, temp location, staging #location, region was needed using gcp shell while running
+#python3 csv_to_bq_multiple.py --runner DataFlowRunner --project #gcp-free-trial-experiment --region us-central1 --temp_location #gs://gcp-dataflow-demo-exec/temp --staging gs://gcp-dataflow-#demo-exec/staging
+
 import logging
 import argparse
 import re
